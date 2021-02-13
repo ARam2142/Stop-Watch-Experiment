@@ -9,8 +9,14 @@ window.onload = function () {
     let hours = parseInt('0');
     let minutes = parseInt('0');
     let seconds = parseInt('0');
-    let first0;
-
+    
+    function makeTwoNumbers(num) {
+        if (num < 10) {
+            return "0" + num
+        }
+        return num
+    }
+    
     //timer
     function timer() {
         seconds++
@@ -25,21 +31,15 @@ window.onload = function () {
             minutes = 0;
             hours = 0;
         }
-
-        if (seconds < 10) {
-            
-        }
-
-        timerEl.textContent = hours + ": " + minutes + ": " + seconds;
-
+        
+        timerEl.textContent = makeTwoNumbers(hours)+ ": " + makeTwoNumbers(minutes) + ": " + makeTwoNumbers(seconds);
     }
 
-    //interval IMPORTANT
     let runTheClock;
 
     //timer is running
     function runTimer() {
-        runTheClock = setInterval(timer, 30);;
+        runTheClock = setInterval(timer, 500);;
     }
 
     //function that will stop timer
