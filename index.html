@@ -13,22 +13,39 @@
 </head>
 
 <body>
-    <header>
-        <h1>The Stop Watch</h1>
+    <header class="header-margin bg-light text-dark">
+        <div class="row justify-content-center">
+            <h1>Stop Watch</h1>
+        </div>
     </header>
-    <h2 id="timer-text">00:00</h2>
 
-    <div>
-        <input id="stop" class="btn btn-primary" type="button" value="Stop">
-        <input id="initiate" class="btn btn-primary" type="submit" value="Start">
-        <input id="restart" class="btn btn-primary" type="reset" value="Reset">
+    <div class="container-fluid">
+        <br>
+        <div class="watch-section">
+            <h2>Time yourself</h2>
+            <!--format to mm:ss:ms -->
+            <h2 id="timer-text">00:00:00</h2>
+            <input class="btn btn-primary" type="button" value="Stop">
+            <input class="btn btn-primary" type="submit" value="Start">
+            <input class="btn btn-primary" type="reset" value="Reset">
+        </div>
+        <br>
     </div>
 
-    <footer>
-
+    <footer class="footer-margin bg-light text-dark">
+        <div class="justify-content-center">Stop Watch © 2021</div>
+        <div class="social justify-content-center">
+            <a href="https://www.linkedin.com/in/andres-ramirez-8b07487b/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>&nbsp;&#124;&nbsp;
+            <a href="https://github.com/ARam2142" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="github">
+            <a>Andres Ramirez</a>
+        </div>
     </footer>
 
 </body>
+<script src="index.js"></script>
 
 
 </html>
