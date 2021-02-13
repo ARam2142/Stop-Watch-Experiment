@@ -9,7 +9,7 @@ window.onload = function () {
     let hours = parseInt('0');
     let minutes = parseInt('0');
     let seconds = parseInt('0');
-    //let tenth = 0
+    let first0;
 
     //timer
     function timer() {
