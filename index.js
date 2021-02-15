@@ -51,7 +51,7 @@ window.onload = function () {
     function resetTimer() {
         //write code here
         stopClock = true;
-        seconds = 0;//reset time back to zero("It took me a day to realize how easy it is!!!!!")
+        seconds = 0;//reset time back to zero("It took me a day to realize how easy it is")
         minutes = 0;
         hours = 0;
         timerEl.textContent = "00:00:00";
